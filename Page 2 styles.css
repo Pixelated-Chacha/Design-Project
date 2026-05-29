@@ -1,0 +1,119 @@
+/* Removes the default gap at the top and sides of the screen (margins) */
+html, body {
+  margin: 0;
+  padding: 0; 
+  aspect-ratio: 16/9;
+}
+/* Header Styling: */
+header {
+  width: 100%;
+  background-image: url('Gaming\ PC\ Setup.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  aspect-ratio: 16 / 9; 
+  
+  display: flex;
+  flex-direction: column;    
+  justify-content: center;
+  align-items: center;
+  width: 2050px;
+}
+header h1 {
+  color: white;
+  font-family: Impact, sans-serif;
+  font-size: 12vw;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  margin: 0; 
+  line-height: 1;  
+  transform: translateY(-70px);
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+header p {
+  color: white;
+  font-family: Impact, sans-serif;
+  font-size: 5vw;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  line-height: 1.2;
+  transform: translateY(-70px); 
+}
+/* Style for the <nav> bar. */
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top: -905px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 2050px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 20px 30px;
+  font-family: 'Impact', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+li a:hover {
+  background-color: black;
+}
+/* Table Style (for image and text in table) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 10670px; /* Keeps the entire table away from the nav bar and header */
+  height: 500px;
+}
+td {
+  border-color: white;
+  border-style: solid;
+  width: 1000px; /* Fixes the width of each cell */
+  padding: 10px;
+  height: 500px; /* Fixes the height of each cell */
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  line-height: 1.8;
+  font-size: 24px;
+  background-color: transparent;
+  background: transparent;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%; /* Defines how much space the image takes */
+}
+/* The Body and Main section remove the white space at the bottom of the page. */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+main {
+  flex: 1; /* This pushes the footer down */
+}
+a {
+  color: white;
+}
